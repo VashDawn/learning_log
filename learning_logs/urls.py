@@ -13,4 +13,7 @@ urlpatterns=[
 
     # show single topic and all of it's entries.
     url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic'),
+
+    # page for adding new topic
+    url(r'^new_topic/$', views.new_topic, name='new_topic')
 ]
